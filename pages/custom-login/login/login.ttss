@@ -1,0 +1,75 @@
+.custom-login-wrapper {
+  padding: 48rpx 64rpx 0 64rpx;
+  background-color: #ffffff;
+}
+
+.custom-login-wrapper .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40rpx;
+  color: #000000;
+  margin-bottom: 48rpx;
+}
+
+.custom-login-wrapper .input {
+  background: rgba(22, 24, 35, 0.03);
+  border-radius: 4px;
+  height: 96rpx;
+  margin-bottom: 16rpx;
+  box-sizing: border-box;
+  padding: 28rpx 32rpx;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 21px;
+  color: rgba(22, 24, 35, 0.34);
+}
+
+.custom-login-wrapper .icon {
+  width: 144rpx;
+  height: 144rpx;
+  top: 240rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-login-wrapper .login-tip {
+  top: 424rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 34rpx;
+  line-height: 48rpx;
+  color: #161823;
+}
+
+.custom-login-wrapper .login-button {
+  width: 100%;
+  height: 88rpx;
+  background: #fe2c55;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 88rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16rpx;
+}
+
+.custom-login-wrapper .label {
+  margin-bottom: 32rpx;
+  display: inline-block;
+}
+
+.custom-login-wrapper .label .text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(22, 24, 35, 0.6);
+  display: inline-block;
+}
+
+.custom-login-wrapper .label .text .highlight {
+  color: #04498d;
+}

@@ -1,0 +1,17 @@
+<view class="mask" hidden="{{!showDialog}}"  catchtouchmove="{{!showDialog}}"></view>
+<view class="dialog {{showDialog?'':'hidden'}}" catchtouchmove="{{!showDialog}}">
+    <view class="micorapp">
+        <image src="../../assets/microapp.png"></image>
+        <view class="micorapp-name">欢迎使用 某团购小程序</view>
+    </view>
+    <view class="operate">
+        <view class="privacy"> 
+            <image class="checkbox" src="{{checked?checkedSrc:src}}" bindtap="onTapCheck"></image>
+                <!-- <radio  checked="{{checked}}"   color="#F85959" bindtap="onTapCheck"></radio> -->
+            <view class="agree">已阅读并同意</view>
+            <view class="protocol">某团购小程序隐私保护协议</view>
+        </view>
+        <button class="bind {{checked?'bind-on':''}}" disabled="{{!checked}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumberHandler" bindtap="bindPhone">抖音手机号一键绑定</button>
+        <button class="close" bindtap="close">关闭</button>
+    </view>
+</view>

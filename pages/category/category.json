@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "tab-bar":"../../components/tab-bar/index",
+        "product-card-small":"../../components/product-card-small/product-card-small"
+    }
+}

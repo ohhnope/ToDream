@@ -1,0 +1,6 @@
+.mr-20{
+    margin-top: 40rpx;
+}
+button::after {
+    border: none;
+}

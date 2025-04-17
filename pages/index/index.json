@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "banner":"../../components/banner/index",
+        "picker-city":"../../components/picker-city/index",
+        "tab-bar":"../../components/tab-bar/index",
+        "product-card-big":"../../components/product-card-big/index"
+    }
+}

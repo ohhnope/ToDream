@@ -1,0 +1,21 @@
+<block tt:for="{{productList}}">
+<view class="product-card" bindtap="toProductDetail" data-id="{{item.id}}">
+    <image class="pro-image" mode="aspectFill" src="{{item.image}}">
+    </image>
+    <view class="pro-infe">
+        <view class="pro-detail">
+            <view class="pro-tittle"> {{item.name}}</view>
+            <view class="pro-desc">
+                <view class="price">¥{{item.current_price}}</view>
+                <view class="mark">{{item.marketing}}折</view>
+                <view class="original-price">¥{{item.original_price}}</view>
+                <view class="sales">已售{{item.sales}}</view>
+            </view>
+
+        </view>
+        <view class="buy-btn">
+            马上抢
+        </view>
+    </view>
+</view>
+</block>

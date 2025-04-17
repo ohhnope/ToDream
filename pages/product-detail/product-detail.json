@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "product-card-small":"../../components/product-card-small/product-card-small",
+        "login-dialog":"../../components/login-dialog/index"
+    },
+    "navigationBarTitleText": "商品详情"
+}

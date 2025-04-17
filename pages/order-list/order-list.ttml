@@ -1,0 +1,33 @@
+<view style="height: 80rpx;">
+<view class="tab-container">
+    <tab-bar options="{{sortList}}" current="{{current}}" bind:change="switchTap" />
+</view>
+</view>
+<swiper current="{{current}}" style="height:{{swiperHeight}}px; min-height: 100vh;" bind:change="switchTap">
+    <swiper-item >
+        <view>
+            <order-card id="card" orderList="{{allOrderList}}"></order-card>
+        </view>
+    </swiper-item>
+    <swiper-item >
+        <view>
+            <order-card id="card" orderList="{{toPayOrderList}}"></order-card>
+        </view>
+    </swiper-item>
+    <swiper-item >
+        <view>
+            <order-card id="card" orderList="{{toUseOrderList}}"></order-card>
+        </view>
+    </swiper-item>
+    <swiper-item >
+        <view>
+            <order-card id="card" orderList="{{completedOrderList}}"></order-card>
+        </view>
+    </swiper-item>
+    <swiper-item >
+        <view>
+            <order-card id="card" orderList="{{afterSalesOrderList}}"></order-card>
+        </view>
+    </swiper-item>
+</swiper>
+

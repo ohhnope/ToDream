@@ -1,0 +1,149 @@
+.phone-number-login-wrapper {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.phone-number-login-wrapper .icon {
+  width: 144rpx;
+  height: 144rpx;
+  position: absolute;
+  top: 240rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone-number-login-wrapper .login-tip {
+  position: absolute;
+  top: 424rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 34rpx;
+  line-height: 48rpx;
+  color: #161823;
+}
+
+.phone-number-login-wrapper .login-button {
+  width: 670rpx;
+  height: 88rpx;
+  position: absolute;
+  top: 600rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fe2c55;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-number-login-wrapper .login-button .phone-number-icon {
+  width: 28rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+
+.phone-number-login-wrapper .label {
+  position: absolute;
+  top: 824rpx;
+  left: 40rpx;
+}
+
+.phone-number-login-wrapper .label .text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(22, 24, 35, 0.6);
+  display: inline-block;
+}
+.phone-number-login-wrapper .mask .modal .content .text .highlight,
+.phone-number-login-wrapper .label .text .highlight {
+  color: #04498d;
+}
+
+.phone-number-login-wrapper .mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.phone-number-login-wrapper .mask .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 32rpx;
+  width: 560rpx;
+  height: 434rpx;
+  background-color: #ffffff;
+  padding: 48rpx 40rpx 0 48rpx;
+  box-sizing: border-box;
+}
+
+.phone-number-login-wrapper .mask .modal .content {
+  font-weight: 500;
+  font-size: 17px;
+}
+.phone-number-login-wrapper .mask .modal .content .title {
+  line-height: 24px;
+  text-align: center;
+  color: #161823;
+  margin-bottom: 16rpx;
+}
+.phone-number-login-wrapper .mask .modal .content .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(22, 24, 35, 0.6);
+  white-space: pre-line;
+  word-break: break-all;
+  margin-bottom: 64rpx;
+}
+
+.phone-number-login-wrapper .mask .modal .btns .confirm {
+  width: 100%;
+  height: 88rpx;
+  background: #fe2c55;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24rpx;
+}
+
+.phone-number-login-wrapper .mask .modal .btns .cancel {
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 21px;
+
+  text-align: center;
+
+  color: rgba(22, 24, 35, 0.6);
+}
+
+.custom-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 704rpx;
+  width: 670rpx;
+  height: 88rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24rpx;
+  border: 0.5px solid rgba(22, 24, 35, 0.5);
+  border-radius: 16rpx;
+  font-weight: 500;
+  font-size: 30rpx;
+  color: #161823;
+}

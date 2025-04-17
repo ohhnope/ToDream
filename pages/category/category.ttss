@@ -1,0 +1,18 @@
+page{
+    background: rgba(22, 24, 35, 0.03);
+}
+
+.tab-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.shop-container{
+    padding-top: 52rpx;
+    width: 702rpx;
+    margin: 0 auto;
+}
+

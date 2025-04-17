@@ -1,0 +1,12 @@
+<sjs module="utils" src="./skeleton.sjs"> </sjs>
+<view
+    class="skeleton-container {{utils.getClassName(mode)}}"
+    style="height: {{height}}rpx; width: {{width}}rpx;{{innerStyle}}"
+>
+</view>
+<!-- 用法 -->
+<!-- <skeleton></skeleton> -->
+<!-- 矩形 -->
+<!-- <skeleton width="80" height="58" style="margin-bottom: 40rpx" /> -->
+<!-- 圆形 -->
+<!-- <skeleton height="34" mode="square"></skeleton> -->

@@ -1,0 +1,10 @@
+{
+    "ttPlugins": {
+      "dependencies": {
+        "microapp-trade-plugin": {
+          "version": "1.1.2",
+          "isDynamic": true
+        }
+      }
+    }
+  }

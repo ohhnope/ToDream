@@ -1,0 +1,83 @@
+<view class="swiper-container">
+<swiper class="pro-swiper" bindchange="switchTap" current="{{current}}" autoplay="true" interval="3000">
+    <block tt:for="{{swiperImg}}">
+        <swiper-item>
+            <image src="{{item}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="current">{{current+1}}<text>/</text>{{swiperImg.length}}</view>
+</view>
+<view class="pro-detail">
+    <view style="height: 60rpx;">
+    <view class="pro-desc">
+        <view class="price-detail">
+            <view class="price"><span class="money-mark">¥</span>{{product.current_price}}</view>
+            <view class="original-price">¥{{product.original_price}}</view>
+            <view class="mark">{{product.marketing}}折</view>
+        </view>
+        <view class="sales">已售{{product.sales}}</view>
+    </view>
+</view>
+    <view class="pro-tittle">
+        <view class="pro-name">{{product.name}}</view>
+        <view class="pro-server"><span>服务</span>
+            <view>过期自动退 · 随时退</view>
+        </view>
+        <view class="pro-server"><span>须知</span>
+            <view>每人限购1份 · 周一至周日可用</view>
+        </view>
+    </view>
+    <view class="pack-detail">
+        <!-- 套餐详情 -->
+        <view class="pro-introduce">
+        <view class="package-details">
+            <span class="common-tittle">套餐详情</span>
+            <block tt:for="{{product.package_details}}">
+                <view class="category-options">
+                    <view class="category">{{item.category}}</view>
+                    <view class="category-item" tt:for="{{item.options}}">
+                        <view class="item-name">
+                            <view class="point"></view>{{item.name}}<span>{{item.description}}</span>
+                        </view>
+                        <view class="item-price">¥{{item.price}}</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <!-- 图文详情 -->
+        <view class="graphic-detail">
+            <span class="common-tittle">图文详情</span>
+            <block tt:for="{{product.graphic_details}}">
+                <image src="{{item.image}}"></image>
+            </block>
+        </view>
+    </view>
+        <!-- 推荐套餐 -->
+        <view class="recommend-package">
+            <span class="common-tittle">推荐套餐</span>
+            <product-card-small productList="{{shopList}}" btnShow="{{false}}"></product-card-small>
+        </view>
+    </view>
+    <view class="bottom"  style="padding-bottom:{{iPhoneBottomHeight + 'px'}};">
+        <view class="bottom-interaction" style="padding-bottom:{{iPhoneBottomHeight + 'px'}}">
+            <view class="collect" bindtap="onTabCollect">
+                <image class="icon" src="{{starChecked?'../../assets/star-selected.png':'../../assets/star.png'}}">
+                </image>
+                <view class="icon-desc">收藏</view>
+            </view>
+            <button class="share" open-type="share" bindtap="onTabShare">
+                <image class="icon" src="../../assets/arrowdowntoright.png"></image>
+                <view class="icon-desc">分享</view>
+            </button>
+            <view>
+                <button class="f-pay-button" tt:if="{{!isLogin}}" bindtap="checkLogin">立即抢购</button>
+                <pay-button id="pay-button" class="pay-button"  tt:if="{{isLogin}}" mode="{{2}}" goods-id="1234" goods-type="{{2}}" bind:error="handleError"
+                    bind:pay="handlePay" bind:getgoodsinfo="getGoodsInfo" bind:placeorder="userLogin"></pay-button>
+            </view>
+        </view>
+    </view>
+    <view style="height: 104rpx;"></view>
+    <view class="bg"></view>
+</view>
+<login-dialog tt:if="{{showDialog}}" showDialog="{{showDialog}}" bind:bindPhone="onTapGetPhone" bind:success="success" bind:close="closeDialog"></login-dialog>

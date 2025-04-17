@@ -1,0 +1,15 @@
+page{
+    background: rgba(22, 24, 35, 0.03);
+}
+
+.tab-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+#card{
+    width: 680rpx;
+    margin: 0 auto;
+}

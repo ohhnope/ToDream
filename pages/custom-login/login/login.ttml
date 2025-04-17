@@ -1,0 +1,35 @@
+<view class="wrapper custom-login-wrapper">
+  <view class="title">账号密码登录</view>
+
+  <form>
+    <input type="text" class="input" placeholder="请输入账号"></input>
+    <input password class="input" placeholder="请输入密码"></input>
+  </form>
+  <label class="label">
+    <checkbox
+      class="agree-rule"
+      value="rule"
+      checked="{{ ruleChecked }}"
+    />
+    <view class="text">
+      已阅读并同意
+      <text class="highlight" catchtap="viewRule">XX用户协议</text>
+      和
+      <text catchtap="viewRule" class="highlight">XX隐私政策</text>
+      。
+
+
+    </view>
+  </label>
+
+  <view>
+    <button class="login-button" bindtap="toast">登录</button>
+  </view>
+
+  <view class="label">
+    <view class="text">
+      没有帐号？
+      <text class="highlight" bindtap="toast">注册新帐号</text>
+    </view>
+  </view>
+</view>

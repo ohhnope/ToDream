@@ -1,0 +1,15 @@
+.skeleton-container {
+    position: relative;
+    border-radius: 8rpx;
+    margin-bottom: 16rpx;
+    background: rgba(22, 24, 35, 0.05);
+    font-size: 0;
+}
+
+.skeleton-circle {
+    border-radius: 50%;
+}
+
+.skeleton-square {
+    border-radius: 0;
+}

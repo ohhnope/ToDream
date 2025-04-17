@@ -1,0 +1,27 @@
+<!-- 分类列表商品卡片组件 -->
+<block tt:for="{{productList}}" tt:key="index">
+    <view class="product-item {{btnShow?'':'product-item-ins'}}" bindtap="toProductDetail" data-id="{{item.id}}">
+        <!-- 商品图片 -->
+        <view class="goods-photo">
+            <image mode="aspectFill" src="{{item.image}}"></image>
+        </view>
+        <!-- 商品信息 -->
+        <view class="goods-info">
+            <view class="goods-title">
+                <text class="goods-name">{{item.name}}</text>
+                <text class="goods-sub-title">{{item.subtitle}}</text>
+            </view>
+            <view class="goods-selling">
+                <view class="goods-price">
+                    <view class="price"><text class="symbol-text">¥</text>{{item.current_price}}</view>
+                    <view class="original-price">¥{{item.original_price}}</view>
+                    <view class="price-unit">{{item.marketing}}折</view>
+                    <view class="goods-count">已售{{item.sales}}</view>
+                </view>
+                <view class="goods-btn" tt:if="{{btnShow}}">
+                    <button>马上抢</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

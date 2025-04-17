@@ -1,0 +1,61 @@
+<block tt:if="{{ isLogin }}">
+  <view tt:if="{{ !phoneNumber }}" class="wrapper phone-number-login-wrapper">
+    <image class="icon" src="../../assets/microapp.png"></image>
+    <view class="login-tip">登录以体验更多精彩内容</view>
+
+    <button tt:if="{{ ruleChecked }}" class="login-button" open-type="getPhoneNumber"
+      bindgetphonenumber="getPhoneNumberHandler">
+      <image class="phone-number-icon" src="../../assets/Vector.png"></image>
+      抖音手机号登录
+    </button>
+    <button tt:else class="login-button" bindtap="showMask">
+      <image class="phone-number-icon" src="../../assets/Vector.png"></image>
+      抖音手机号登录
+
+
+    </button>
+    <view class="custom-button" bindtap="goToCustomPage">账号密码登录</view>
+    <checkbox-group bindchange="onRuleChecked">
+      <label class="label">
+        <checkbox class="agree-rule" value="rule" checked="{{ ruleChecked }}" />
+        <view class="text">
+          已阅读并同意
+          <text class="highlight" catchtap="viewRule">XX用户协议</text>
+          和
+          <text catchtap="viewRule" class="highlight">XX隐私政策</text>
+          。
+        </view>
+      </label>
+    </checkbox-group>
+    <view tt:if="{{ showMask }}" class="mask">
+      <view class="modal">
+        <view class="content">
+          <view class="title">用户协议及隐私政策</view>
+          <view class="text">
+            已阅读并同意
+            <text class="highlight" catchtap="viewRule">XX用户协议</text>
+            和
+            <text catchtap="viewRule" class="highlight">XX隐私政策</text>
+          </view>
+        </view>
+        <view class="btns">
+          <button class="confirm" bindtap="agreeRule" open-type="getPhoneNumber"
+            bindgetphonenumber="getPhoneNumberHandler">同意</button>
+          <view class="cancel" bindtap="closeMask">不同意</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <info tt:else type="phoneNumber" phoneNumber="{{ phoneNumber }}" />
+</block>
+<block tt:if="{{ !isLogin }}">
+  <view class="wrapper douyin-login-wrapper">
+    <image class="icon" src="../../assets/microapp.png"></image>
+    <view class="login-tip">登录以体验更多精彩内容</view>
+    <button class="login-button" bindtap="douyinLogin">
+      <image class="douyin-icon" src="../../assets/Vector.png"></image>
+      抖音登录
+    </button>
+    <view class="app-login-tip">请先登录抖音以便进行后续操作</view>
+  </view>
+</block>

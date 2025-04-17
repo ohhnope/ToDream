@@ -1,0 +1,24 @@
+<view style="width: 100vw; background-color: #FFFFFF;">
+<!-- 轮播图 -->
+<view class="swiper-container">
+<swiper class="swiper" autoplay="true"  bindchange="switchTap" current="{{current}}" indicator-dots="{{false}}" interval="3000">
+    <block tt:for="{{productList}}">
+        <swiper-item data-id="{{item.id}}" bindtap="toProductDetail">
+            <image class="swiper-img" mode="aspectFill" src="{{item.image}}"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="current-dot">
+    <block tt:for="{{productList.length}}">
+        <view class="dot {{index==current?'dot-on':''}}"></view>
+    </block>
+</view>
+</view>
+<!-- 金刚位 -->
+<view class="nav">
+    <view class="nav-item" bindtap="toCategoryPage" data-category="{{index}}" data-tittle="{{item.tittle}}" tt:for="{{navList}}">
+        <image class="nav-img" src="{{item.img}}"></image>
+        <view class="nav-text">{{item.tittle}}</view>
+    </view>
+</view>
+</view>

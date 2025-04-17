@@ -1,0 +1,40 @@
+<!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="" >
+    <view class="picker">
+        {{region[1]??'北京'}}
+    </view>
+  </picker> -->
+<view class="mask" tt:if="{{pickerVisibility}}"></view>
+<view class="pick-area" >
+    <view class="city" bind:tap="onTapPickProvince">
+        <text>{{cityName??'北京'}}</text>
+        <image class="nh-arrow" src="../../assets/down-arrow.png" />
+    </view>
+    <view class="notice" tt:if="{{enableLocation}}" bindtap="openSettings">
+        <text>当前未开启定位权限，去开启</text>
+        <image class="nh-arrow" src="../../assets/right-arrow.png" />
+    </view>
+
+</view>
+<view class="masking-background" tt:if="{{pickerVisibility}}">
+    <view class="picker-background">
+        <view class="picker-action">
+            <text class="cancel-text" bindtap="onTapClose">取消</text>
+            <text class="cancel-text">选择所在城市</text>
+            <text class="action-text" bindtap="onTapConfirm">确定</text>
+        </view>
+        <view tt:if="{{show}}">
+            <picker-view indicator-style="height:88rpx" style="height: 600rpx" value="{{value}}"
+                bindchange="cityChange">
+                <picker-view-column style="text-align: center">
+                    <view tt:for="{{provinces}}" class="picker-text">{{item.name}}</view>
+                </picker-view-column>
+                <picker-view-column style="text-align: center">
+                    <view tt:for="{{cities}}" class="picker-text">{{item}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+        <view tt:else class="skeleton" style="height: 600rpx">
+            <skeleton style="{{skeletonStyle + 'height:500rpx'}}" />
+        </view>
+    </view>
+</view>

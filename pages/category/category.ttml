@@ -1,0 +1,14 @@
+<view style="height: 80rpx;">
+<view class="tab-container">
+    <tab-bar options="{{sortList}}"  current="{{current}}" bind:change="handleTabbarChange"/>
+</view>
+</view>
+<swiper current="{{current}}" style="height:{{swiperHeight}}px; min-height: 100vh;" bindchange="switchTap">
+    <block tt:for="{{sortList.length}}" >
+        <swiper-item >
+            <view>
+                <product-card-small  id="card" class="product-item" productList="{{shopList}}"></product-card-small>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>

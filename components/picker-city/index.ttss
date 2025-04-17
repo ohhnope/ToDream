@@ -1,0 +1,82 @@
+.picker-background {
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 16rpx 16rpx 0 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1999;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    z-index: 1998;
+}
+.skeleton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.picker-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-text {
+    margin: 28rpx 32rpx;
+    color: #fe2c55;
+    font-weight: 500;
+    font-size: 34rpx;
+}
+
+.cancel-text {
+    margin: 28rpx 32rpx;
+    color: #161823;
+    font-weight: 500;
+    font-size: 34rpx;
+}
+
+.picker-text {
+    color: #161823;
+    font-weight: 500;
+    font-size: 34rpx;
+    line-height: 88rpx;
+}
+
+@keyframes showUp {
+    from {
+        bottom: -75%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.nh-arrow {
+    width: 24rpx;
+    height: 24rpx;
+    margin-left:8rpx;
+}
+
+.pick-area {
+    display: flex;
+    align-items: center;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #161823;
+    justify-content: space-between;
+    width: 686rpx;
+    margin: 0 auto;
+    padding: 20rpx;
+}
+.notice{
+    color: #FA1E63;
+}

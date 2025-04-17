@@ -1,0 +1,24 @@
+<view style="width: 100vw;height: 66rpx; background-color: #FFFFFF;">
+    <picker-city />
+</view>
+<banner productList="{{shopList}}" />
+<!-- <view class="mr-20"></view> -->
+<tab-bar options="{{sortList}}" current="{{current}}" bind:change="switchTap" />
+<view class="mr-20"></view>
+<swiper current="{{current}}"  style="height:{{swiperHeight}}px;" bindchange="switchTap">
+        <swiper-item>
+            <view>
+                <product-card-big id="card"  productList="{{distanceSortList}}" />
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view>
+                <product-card-big id="card"  productList="{{rateSortList}}" />
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view>
+                <product-card-big id="card"  productList="{{saleSortList}}" />
+            </view>
+        </swiper-item>
+</swiper>
