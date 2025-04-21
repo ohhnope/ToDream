@@ -1,0 +1,271 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#ff536f", //小圈圈的颜色
+						"style": "circle" //小圈圈的样式
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTitleText": "我的"
+			}
+		}
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "密码登录",
+                "enablePullDownRefresh": false
+            }
+        }
+		,{
+		    "path" : "pages/login/code",
+		    "style" :                                                                                    
+		    {
+				// "navigationStyle": "custom" ,// 隐藏系统导航栏
+		        "navigationBarTitleText": "获取验证码",
+		        "enablePullDownRefresh": false
+		    }
+		}
+		,{
+		    "path" : "pages/login/account",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+		        "navigationBarTitleText": "短信登录",
+		        "enablePullDownRefresh": false
+		    }
+		}
+		,{
+		    "path" : "pages/login/problem",
+		    "style" : 
+		    {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+		        "navigationBarTitleText": "常见问题",
+		        "enablePullDownRefresh": false
+		    }
+		}
+        ,{
+            "path" : "pages/profile/setting",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "设置",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+		    "path" : "pages/profile/profile",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+		        "navigationBarTitleText": "信息",
+		        "enablePullDownRefresh": false
+		    }
+		}
+        ,{
+            "path" : "pages/profile/password",
+            "style" : 
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "修改密码",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+				// "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" :
+            {
+				// "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "新闻资讯",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/profile/aboutMe",
+		    "style" :
+		    {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				 "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/search/searchList",
+            "style" :                                                                                    
+            {
+				// "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#ff536f", //小圈圈的颜色
+						"style": "circle" //小圈圈的样式
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false
+            }
+        },{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+				// "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/content/content",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+               "navigationStyle": "custom" ,// 隐藏系统导航栏
+               "navigationBarTitleText": "订单",
+                "enablePullDownRefresh": false
+            }
+            
+        } ,{
+            "path" : "pages/order/preOrder",
+            "style" :                                                                                    
+            {
+               "navigationStyle": "custom" ,// 隐藏系统导航栏
+               "navigationBarTitleText": "确认订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/address/address",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "收货地址",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/address/addAddress",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "新增地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/coupon/coupon",
+            "style" : 
+            {
+               "navigationStyle": "custom" ,// 隐藏系统导航栏
+               "navigationBarTitleText": "优惠卷",
+               "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "World",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#ff536f",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/tab-home.png",
+				"selectedIconPath": "static/tabbar/tab-home-current.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/cate/cate",
+				"iconPath": "static/tabbar/tab-cate.png",
+				"selectedIconPath": "static/tabbar/tab-cate-current.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tabbar/tab-cart.png",
+				"selectedIconPath": "static/tabbar/tab-cart-current.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabbar/tab-user.png",
+				"selectedIconPath": "static/tabbar/tab-user-current.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

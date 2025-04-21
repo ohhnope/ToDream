@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "新增地址",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "u-switch": "/uview-ui/components/u-switch/u-switch",
+    "u-button": "/uview-ui/components/u-button/u-button"
+  }
+}

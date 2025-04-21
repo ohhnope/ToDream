@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["pages-profile-aboutMe"],{cb18:function(e,t,n){"use strict";n.r(t);var i=n("f0c5"),s=Object(i["a"])({},(function(){var e=this.$createElement,t=this._self._c||e;return t("v-uni-view",{staticClass:"about"})}),[],!1,null,null,null,!1,void 0,void 0);t["default"]=s.exports}}]);

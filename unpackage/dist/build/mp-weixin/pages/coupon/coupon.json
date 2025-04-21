@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "优惠卷",
+  "enablePullDownRefresh": false,
+  "usingComponents": {}
+}

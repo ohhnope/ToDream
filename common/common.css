@@ -1,0 +1,11 @@
+/* 全局居中样式 */
+.main-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 全局图标样式 */
+.main-icon{
+	width: 80rpx;height: 80rpx;border-radius: 100%;
+}

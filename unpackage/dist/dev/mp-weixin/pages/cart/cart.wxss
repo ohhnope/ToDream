@@ -1,0 +1,157 @@
+
+page{
+	background-color: #fff;
+}
+
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+/* 全局主色 */
+.container.data-v-0f00adf4 {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+.container .cartList.data-v-0f00adf4 {
+  text-align: left;
+}
+.container .cartList .cartItem.data-v-0f00adf4 {
+  margin: 0 20rpx;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+.container .cartList .cartItem .checkbox.data-v-0f00adf4 {
+  background: #ff536f;
+  border-radius: 100%;
+  margin-right: 20rpx;
+  padding: 8rpx;
+}
+.container .cartList .cartItem .goosMsg.data-v-0f00adf4 {
+  margin-left: 20rpx;
+}
+.container .cartList .cartItem .goosMsg .title.data-v-0f00adf4 {
+  width: 430rpx;
+  margin-top: -20rpx;
+  font-size: 28rpx;
+  color: #303133;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 35px;
+  max-height: 35px;
+}
+.container .cartList .cartItem .goosMsg .desc.data-v-0f00adf4 {
+  font-weight: normal;
+  font-size: 22rpx;
+  color: #909399;
+}
+.container .cartList .cartItem .goosBottom.data-v-0f00adf4 {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .cartList .cartItem .goosBottom .num.data-v-0f00adf4 {
+  font-size: 26rpx;
+  color: #303133;
+  font-weight: 800;
+}
+.container .cartList .cartItem .goosBottom .right.data-v-0f00adf4 {
+  font-size: 26rpx;
+  color: #303133;
+}
+.container .cartList .bottomView.data-v-0f00adf4 {
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+.container .cartList .bottomView .bottomLeft.data-v-0f00adf4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.container .cartList .bottomView .bottomLeft .checkbox.data-v-0f00adf4 {
+  border-radius: 100%;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  padding: 8rpx;
+  z-index: 1;
+}
+.container .cartList .bottomView .bottomLeft .clear.data-v-0f00adf4 {
+  width: 120rpx;
+  padding: 5rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10%;
+  position: absolute;
+  left: 30rpx;
+  z-index: 0;
+  color: #999;
+  font-size: 16px;
+}
+.container .cartList .bottomView .bottomRight.data-v-0f00adf4 {
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.container .cartList .bottomView .bottomRight .left.data-v-0f00adf4 {
+  color: #ff536f;
+  font-size: 18px;
+  font-weight: 800;
+  margin-right: 20rpx;
+}
+.container .cartList .bottomView .bottomRight .right.data-v-0f00adf4 {
+  color: #fff;
+  background: #ff536f;
+  padding: 2rpx 20rpx;
+  border-radius: 30rpx;
+  margin-left: 20rpx;
+}
+.container .empty.data-v-0f00adf4 {
+  margin-top: 220rpx;
+  width: 100%;
+  text-align: center;
+}
+.container .empty .title.data-v-0f00adf4 {
+  color: #303133;
+  margin: 20rpx 0 10rpx 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.container .empty .tip.data-v-0f00adf4 {
+  color: #909399;
+  font-size: 14px;
+}
+.container .empty .btn.data-v-0f00adf4 {
+  color: #fff;
+  background-image: linear-gradient(to left, #ff536f, rgba(255, 83, 111, 0.6));
+  width: 200rpx;
+  padding: 15rpx 28rpx;
+  border-radius: 130rpx;
+  margin: 80rpx 0 0 275rpx;
+}
+

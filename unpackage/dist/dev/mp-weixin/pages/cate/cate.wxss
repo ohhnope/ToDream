@@ -1,0 +1,101 @@
+
+page {
+  background-color: #ffffff;
+}
+
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+/* 全局主色 */
+.u-wrap.data-v-56dc8334 {
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+}
+.u-search-box.data-v-56dc8334 {
+  margin-top: 50rpx;
+  padding: 18rpx 30rpx;
+}
+.u-menu-wrap.data-v-56dc8334 {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+.u-tab-view.data-v-56dc8334 {
+  width: 200rpx;
+  height: 100%;
+}
+.u-tab-item.data-v-56dc8334 {
+  height: 110rpx;
+  background: #f6f6f6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  color: #444;
+  font-weight: 400;
+  line-height: 1;
+}
+.u-tab-item-active.data-v-56dc8334 {
+  position: relative;
+  color: #ff536f;
+  font-size: 30rpx;
+  font-weight: 500;
+  background: #fff;
+}
+.u-tab-item-active.data-v-56dc8334::before {
+  content: "";
+  position: absolute;
+  border-left: 4px solid #ff536f;
+  height: 32rpx;
+  left: 0;
+  top: 39rpx;
+}
+.u-tab-view.data-v-56dc8334 {
+  height: 100%;
+}
+.right-box.data-v-56dc8334 {
+  background-color: #fafafa;
+}
+.page-view.data-v-56dc8334 {
+  padding: 16rpx;
+}
+.class-item.data-v-56dc8334 {
+  margin-bottom: 30rpx;
+  background-color: #fff;
+  padding: 16rpx;
+  border-radius: 8rpx;
+}
+.item-title.data-v-56dc8334 {
+  font-size: 30rpx;
+  color: #303133;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+.item-menu-name.data-v-56dc8334 {
+  font-weight: normal;
+  font-size: 24rpx;
+  color: #303133;
+}
+.item-container.data-v-56dc8334 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumb-box.data-v-56dc8334 {
+  width: 33.333333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.item-menu-image.data-v-56dc8334 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+}
+

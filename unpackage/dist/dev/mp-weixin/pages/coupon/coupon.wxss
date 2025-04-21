@@ -1,0 +1,103 @@
+
+page{
+	background-color: #fff;
+}
+
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+/* 全局主色 */
+.u-wrap.data-v-032f11f4 {
+  padding: 20rpx;
+}
+.jingdong.data-v-032f11f4 {
+  width: 700rpx;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+}
+.jingdong .left.data-v-032f11f4 {
+  padding: 0 30rpx;
+  background-color: #ff536f;
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+.jingdong .left .sum.data-v-032f11f4 {
+  margin-top: 50rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.jingdong .left .sum .num.data-v-032f11f4 {
+  font-size: 80rpx;
+}
+.jingdong .left .type.data-v-032f11f4 {
+  margin-bottom: 50rpx;
+  font-size: 24rpx;
+}
+.jingdong .right.data-v-032f11f4 {
+  padding: 20rpx 20rpx 0;
+  font-size: 28rpx;
+}
+.jingdong .right .top .tag.data-v-032f11f4 {
+  padding: 4rpx 20rpx;
+  background-color: #ff536f;
+  border-radius: 20rpx;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.jingdong .right .top .title.data-v-032f11f4 {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.jingdong .right .top .bottom.data-v-032f11f4 {
+  border-top: 2rpx dashed #e4e7ed;
+  display: flex;
+  margin-top: 15rpx;
+  padding-top: 15rpx;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.jingdong .right .top .bottom .date.data-v-032f11f4 {
+  font-size: 20rpx;
+  flex: 1;
+}
+.jingdong .right .top .bottom .immediate-use.data-v-032f11f4 {
+  margin-left: 20rpx;
+  height: auto;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  line-height: 40rpx;
+  color: #758ea5;
+  border: 2rpx solid #758ea5;
+}
+.empty.data-v-032f11f4 {
+  margin-top: 220rpx;
+  width: 100%;
+  text-align: center;
+}
+.empty .title.data-v-032f11f4 {
+  color: #303133;
+  margin: 20rpx 0 10rpx 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.empty .tip.data-v-032f11f4 {
+  color: #909399;
+  font-size: 14px;
+}
+.empty .btn.data-v-032f11f4 {
+  color: #fff;
+  background-image: linear-gradient(to left, #ff536f, rgba(255, 83, 111, 0.6));
+  width: 200rpx;
+  padding: 15rpx 28rpx;
+  border-radius: 130rpx;
+  margin: 80rpx 0 0 275rpx;
+}
+

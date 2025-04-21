@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "确认订单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-read-more": "/uview-ui/components/u-read-more/u-read-more",
+    "u-input": "/uview-ui/components/u-input/u-input"
+  }
+}

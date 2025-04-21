@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+/* 全局主色 */
+.container.data-v-db675620 {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8rpx;
+}
+.container .addressList.data-v-db675620 {
+  text-align: left;
+}
+.container .addressList .item.data-v-db675620 {
+  padding: 10rpx 20rpx;
+  background-color: #ffffff;
+}
+.container .addressList .item .title.data-v-db675620 {
+  width: 430rpx;
+  font-size: 16px;
+  color: #303133;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  display: flex;
+  align-items: center;
+  margin: 10rpx 20rpx 30rpx 0;
+}
+.container .addressList .item .title .phone.data-v-db675620 {
+  margin-left: 20rpx;
+  color: #909399;
+  font-size: 16px;
+}
+.container .addressList .item .title .default.data-v-db675620 {
+  margin-left: 20rpx;
+  padding: 2rpx 8rpx;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 8rpx;
+  background-color: #ff536f;
+}
+.container .addressList .item .desc.data-v-db675620 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #909399;
+  margin: 10rpx 20rpx 20rpx 0;
+}
+.container .empty.data-v-db675620 {
+  margin-top: 220rpx;
+  width: 100%;
+  text-align: center;
+}
+.container .empty .title.data-v-db675620 {
+  margin: 20rpx 0 10rpx 0;
+  color: #909399;
+  font-size: 14px;
+}
+.container .empty .tip.data-v-db675620 {
+  color: #909399;
+  font-size: 14px;
+}
+.container .empty .btn.data-v-db675620 {
+  color: #fff;
+  background-image: linear-gradient(to left, #ff536f, rgba(255, 83, 111, 0.6));
+  width: 200rpx;
+  padding: 15rpx 28rpx;
+  border-radius: 130rpx;
+  margin: 300rpx 0 0 275rpx;
+}
+.container .bottomView.data-v-db675620 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+

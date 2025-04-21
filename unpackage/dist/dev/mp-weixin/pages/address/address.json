@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "收货地址",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-swipe-action": "/uview-ui/components/u-swipe-action/u-swipe-action",
+    "u-button": "/uview-ui/components/u-button/u-button"
+  }
+}
